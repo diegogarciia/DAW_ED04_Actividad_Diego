@@ -7,7 +7,7 @@
         var sumaFilas = Array(m.size){0}
         var sumaColum = Array(m[0].size){0}
 
-        mostrarMatriz(m)
+        sumarFilas(m)
         var f: Int = 0
         var c: Int = 0
 
@@ -41,7 +41,7 @@
         }
     }
 
-    fun mostrarMatriz(m:Array<Array<Int>>){
+    fun sumarFilas(m:Array<Array<Int>>){
         for (f in m.indices){
             for (c in m[f].indices){
                 print("${m[f][c]} ")
